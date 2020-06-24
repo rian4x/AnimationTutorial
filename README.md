@@ -1,2 +1,2 @@
 # AnimationTutorial
-A simple animation tutorial
+Simple animation tutorial for iOS
