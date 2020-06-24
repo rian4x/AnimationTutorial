@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YB-w3-2EH">
+                                <rect key="frame" x="40" y="84" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="qS8-IZ-L8r"/>
+                                </constraints>
+                                <state key="normal" title="Linear"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvl-UP-f4j">
+                                <rect key="frame" x="40" y="152" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ease In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prq-x0-US8">
+                                <rect key="frame" x="189" y="752" width="36" height="30"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3s-nW-RI2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePC-Ie-hBW">
+                                <rect key="frame" x="40" y="221" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ease Out"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Z-Do-dpu">
+                                <rect key="frame" x="40" y="305" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ease In Out"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpl-hg-xde">
+                                <rect key="frame" x="184" y="803" width="46" height="30"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbM-l8-MqY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zpl-hg-xde" firstAttribute="top" secondItem="prq-x0-US8" secondAttribute="bottom" constant="21" id="0S4-L8-mId"/>
+                            <constraint firstItem="9YB-w3-2EH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="5GH-fx-QxQ"/>
+                            <constraint firstItem="ePC-Ie-hBW" firstAttribute="top" secondItem="fvl-UP-f4j" secondAttribute="bottom" constant="39" id="A48-G3-dYS"/>
+                            <constraint firstItem="Y4Z-Do-dpu" firstAttribute="width" secondItem="9YB-w3-2EH" secondAttribute="width" id="BJR-LI-vCd"/>
+                            <constraint firstItem="fvl-UP-f4j" firstAttribute="width" secondItem="9YB-w3-2EH" secondAttribute="width" id="FGh-tm-Npg"/>
+                            <constraint firstItem="ePC-Ie-hBW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="MDE-PU-Tgw"/>
+                            <constraint firstItem="ePC-Ie-hBW" firstAttribute="width" secondItem="9YB-w3-2EH" secondAttribute="width" id="TmL-eN-ktf"/>
+                            <constraint firstItem="fvl-UP-f4j" firstAttribute="top" secondItem="9YB-w3-2EH" secondAttribute="bottom" constant="38" id="aSv-Mw-Nsc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="prq-x0-US8" secondAttribute="bottom" constant="80" id="edb-Fk-wb5"/>
+                            <constraint firstItem="fvl-UP-f4j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gRU-4Y-Ckt"/>
+                            <constraint firstItem="Zpl-hg-xde" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gv3-p9-HaI"/>
+                            <constraint firstItem="prq-x0-US8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lYD-UT-40p"/>
+                            <constraint firstItem="Y4Z-Do-dpu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="mxr-Kf-2pX"/>
+                            <constraint firstItem="9YB-w3-2EH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="nkc-8W-7zg"/>
+                            <constraint firstItem="Y4Z-Do-dpu" firstAttribute="top" secondItem="ePC-Ie-hBW" secondAttribute="bottom" constant="54" id="saY-hI-Cje"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="easeInButton" destination="fvl-UP-f4j" id="tIT-t5-6Ah"/>
+                        <outlet property="easeInOutButton" destination="Y4Z-Do-dpu" id="UBu-bR-VMH"/>
+                        <outlet property="easeOutButton" destination="ePC-Ie-hBW" id="Ldi-s5-kOk"/>
+                        <outlet property="linearButton" destination="9YB-w3-2EH" id="VuY-7j-21H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+</document>
