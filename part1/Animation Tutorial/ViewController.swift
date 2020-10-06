@@ -29,19 +29,27 @@ class ViewController: UIViewController {
     private func startAnimationButton1() {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
             self.linearButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        }, completion: nil)
+        }) { [weak self] _ in
+            self?.linearButton.transform = CGAffineTransform.identity
+        }
         
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
             self.easeInButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        }, completion: nil)
+        }) { [weak self] _ in
+            self?.easeInButton.transform = CGAffineTransform.identity
+        }
         
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.easeOutButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        }, completion: nil)
+        }) { [weak self] _ in
+            self?.easeOutButton.transform = CGAffineTransform.identity
+        }
         
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
             self.easeInOutButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        }, completion: nil)
+        }) { [weak self] _ in
+            self?.easeInOutButton.transform = CGAffineTransform.identity
+        }
     }
     
     private func resetAnimation() {
