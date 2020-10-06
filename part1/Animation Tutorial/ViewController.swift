@@ -29,25 +29,41 @@ class ViewController: UIViewController {
     @IBAction func linearButtonTapped(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
             self.linearButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        })
+        }) { [weak self] _ in
+            UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
+                self?.linearButton.transform = CGAffineTransform.identity
+            })
+        }
     }
     
     @IBAction func easeInButtonTapped(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
             self.easeInButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        })
+        }) { [weak self] _ in
+            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
+                self?.easeInButton.transform = CGAffineTransform.identity
+            })
+        }
     }
     
     @IBAction func easeOutButtonTapped(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.easeOutButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        })
+        }) { [weak self] _ in
+            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
+                self?.easeOutButton.transform = CGAffineTransform.identity
+            })
+        }
     }
     
     @IBAction func easeInOutButtonTapped(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
             self.easeInOutButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
-        })
+        }) { [weak self] _ in
+            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+                self?.easeInOutButton.transform = CGAffineTransform.identity
+            })
+        }
     }
     
     
