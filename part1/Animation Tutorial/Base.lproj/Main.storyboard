@@ -22,11 +22,17 @@
                                     <constraint firstAttribute="width" constant="100" id="qS8-IZ-L8r"/>
                                 </constraints>
                                 <state key="normal" title="Linear"/>
+                                <connections>
+                                    <action selector="linearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAR-GY-1Cs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvl-UP-f4j">
                                 <rect key="frame" x="40" y="152" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Ease In"/>
+                                <connections>
+                                    <action selector="easeInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIK-XE-wHN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prq-x0-US8">
                                 <rect key="frame" x="189" y="752" width="36" height="30"/>
@@ -39,11 +45,17 @@
                                 <rect key="frame" x="40" y="221" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Ease Out"/>
+                                <connections>
+                                    <action selector="easeOutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUL-yu-Aen"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Z-Do-dpu">
                                 <rect key="frame" x="40" y="305" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Ease In Out"/>
+                                <connections>
+                                    <action selector="easeInOutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIp-57-ekJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpl-hg-xde">
                                 <rect key="frame" x="184" y="803" width="46" height="30"/>
