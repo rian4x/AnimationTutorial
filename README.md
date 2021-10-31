@@ -1,2 +1,2 @@
-# AnimationTutorial
-Simple animation tutorial for iOS
+# Animation Tutorial
+Simple animation tutorial for iOS using UIKit
