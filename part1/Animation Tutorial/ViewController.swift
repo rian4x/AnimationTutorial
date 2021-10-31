@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func linearButtonTapped(_ sender: Any) {
-        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            self.linearButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
+        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: { [weak self] in
+            self?.linearButton.transform = CGAffineTransform.init(translationX: 200, y: 0)
         }) { [weak self] _ in
             UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
                 self?.linearButton.transform = CGAffineTransform.identity
