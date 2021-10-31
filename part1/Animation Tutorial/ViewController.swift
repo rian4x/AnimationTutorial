@@ -19,11 +19,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playTapped(_ sender: Any) {
-        startAnimationButton1()
+        _startAnimationButton1()
     }
     
     @IBAction func resetTapped(_ sender: Any) {
-        resetAnimation()
+        _resetAnimation()
     }
     
     @IBAction func linearButtonTapped(_ sender: Any) {
@@ -67,14 +67,14 @@ class ViewController: UIViewController {
     }
     
     
-    private func startAnimationButton1() {
+    private func _startAnimationButton1() {
         linearButtonTapped(self)
         easeInButtonTapped(self)
         easeOutButtonTapped(self)
         easeInOutButtonTapped(self)
     }
     
-    private func resetAnimation() {
+    private func _resetAnimation() {
         easeInOutButton.transform = CGAffineTransform.identity
         easeOutButton.transform = CGAffineTransform.identity
         easeInButton.transform = CGAffineTransform.identity
